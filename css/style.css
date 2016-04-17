@@ -496,7 +496,7 @@ body.show_sidebar .wrapper {
 
 .wrapper {
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -511,7 +511,7 @@ body.show_sidebar .wrapper {
     align-content: center;
     align-item: center;
     width: 100%;
-    height: 56px;
+    height: 3.5em;
     background-color: #2196F3;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     .wrapper .header a {
@@ -519,5 +519,7 @@ body.show_sidebar .wrapper {
       width: 50px;
       color: #fff;
       margin-left: 16px; }
+  .wrapper .about {
+    margin: 0 16px; }
 
 /*# sourceMappingURL=style.css.map */
