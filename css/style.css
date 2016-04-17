@@ -453,6 +453,10 @@ th {
 * {
   font-family: "Roboto",sans-serif; }
 
+body {
+  width: 100vw;
+  height: 100vh; }
+
 .nav-drawer {
   display: flex;
   flex-flow: column nowrap;
@@ -496,8 +500,8 @@ body.show_sidebar .wrapper {
 
 .wrapper {
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
