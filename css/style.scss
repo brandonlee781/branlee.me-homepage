@@ -8,6 +8,8 @@ $body-size: 100%-$drawer-size;
 }
 body {
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 .nav-drawer {
   display: flex;
@@ -58,8 +60,8 @@ body.show_sidebar .wrapper {
 }
 .wrapper {
   overflow: hidden;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
