@@ -1,0 +1,86 @@
+@import 'normalize/import-now';
+@import 'colorpalette';
+$drawer-size: 40%;
+$body-size: 100%-$drawer-size;
+
+* {
+  font-family: "Roboto",sans-serif;
+}
+.nav-drawer {
+  display: flex;
+  flex-flow: column nowrap;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 100%;
+  width: $drawer-size;
+  height: 100%;
+  background-color: #363636;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  h2 {
+    margin: 3px 5px 5px 10px;
+    color: #eee;
+  }
+  button {
+    display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
+    width: 100%;
+    height: 60px !important;
+    text-decoration: none;
+    
+    a {
+      color: #eee;
+      text-decoration: none;
+    }
+    i {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    img {
+      height: 20px;
+      width: 20px;
+      margin-right: 5px;
+    }
+    & :hover {
+      
+    }
+  }
+}
+body.show_sidebar .nav-drawer {right: $body-size;}
+body.show_sidebar .wrapper {
+  margin-left: $drawer-size;
+  width: $body-size;
+}
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  .header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-item: center;
+    width: 100%;
+    height: 56px;
+    background-color:$primary-color500;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    & a {
+      display: inline-block;
+      width: 50px;
+      color: #fff;
+      margin-left: 16px;
+    }
+  }
+}
