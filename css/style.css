@@ -462,7 +462,7 @@ nav {
   flex-flow: column nowrap;
   position: fixed;
   overflow: auto;
-  width: 40%;
+  width: 50%;
   height: 100%;
   background-color: #424242; }
   nav h2 {
@@ -487,7 +487,7 @@ nav {
   display: flex; }
 
 .move-wrap {
-  margin-left: 40%; }
+  margin-left: 50%; }
 
 .wrapper {
   width: 100%; }
@@ -504,30 +504,31 @@ nav {
       cursor: pointer;
       display: inline-block;
       width: 50px;
-      color: #fff;
+      color: #eeeded;
       margin-left: 16px; }
   .wrapper main {
-    width: 100%; }
+    width: 100%;
+    background-color: #eeeded; }
     .wrapper main .about, .wrapper main .blog, .wrapper main .skills, .wrapper main .project, .wrapper main .contact {
       padding: 0 16px; }
     .wrapper main .about {
       display: flex;
       flex-direction: column;
-      height: 45em;
+      height: 48em;
       padding-top: 4em;
       background: url(../img/heroimage2.jpg) #111 fixed no-repeat;
       background-size: 2000px;
-      background-position: 30% 150%; }
+      background-position: 30% 60%; }
       .wrapper main .about h1, .wrapper main .about h2, .wrapper main .about p {
         color: #eee;
-        margin: 0; }
+        margin: 0;
+        font-weight: bold;
+        text-shadow: 0px 0px 3px #000; }
       .wrapper main .about h1 {
         font-size: 4em;
-        font-weight: bold;
         margin-top: 15px; }
       .wrapper main .about h2 {
         font-size: 2em;
-        font-weight: bold;
         margin-top: -15px; }
       .wrapper main .about p {
         font-size: 1.4em;
@@ -537,33 +538,41 @@ nav {
         font-size: 4em;
         color: #eee; }
     .wrapper main .blog {
-      height: 14em; }
+      height: 14em;
+      padding-top: 2em;
+      margin-bottom: 1em;
+      background-color: #fff;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
       .wrapper main .blog p {
-        font-size: 1.4em; }
+        font-size: 1.4em;
+        margin-top: 0;
+        color: #333; }
     .wrapper main .skills {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
-      height: 40em;
-      background-color: #424242; }
+      position: relative;
+      height: 25em;
+      background-color: #eee; }
       .wrapper main .skills h2 {
         width: 100%;
         font-size: 2em;
-        color: #eee; }
+        color: #333;
+        line-height: 1.4em !important; }
       .wrapper main .skills img {
-        width: 64px;
-        height: 64px;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        width: 96px;
+        height: 96px;
         padding: 1.5em; }
-        .wrapper main .skills img:hover {
-          width: 96px;
-          height: 96px;
-          padding: 0.8em;
-          background-color: rgba(255, 255, 255, 0.6);
-          -webkit-transition: all .5s ease;
-          -moz-transition: all .5s ease;
-          -ms-transition: all .5s ease;
-          -o-transition: all .5s ease;
-          transition: all .5s ease; }
+    .wrapper main .projects {
+      width: 100%;
+      height: 14em;
+      margin: 1em 0;
+      background-color: #fff;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 /*# sourceMappingURL=style.css.map */
