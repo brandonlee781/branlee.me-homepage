@@ -84,9 +84,9 @@ nav {
       flex-direction: column;
       height: 45em;
       padding-top: 4em;
-      background: url(../img/heroimage.jpg) #d9d9d9 fixed no-repeat;
+      background: url(../img/heroimage2.jpg) #111 fixed no-repeat;
       background-size: 2000px;
-      background-position: 50% 40%;
+      background-position: 30% 150%;
       h1, h2, p {
         color: #eee;
         margin: 0;
@@ -125,6 +125,7 @@ nav {
       height: 40em;
       background-color: #424242;
       h2 {
+        width: 100%;
         font-size: 2em;
         color: #eee;
       }

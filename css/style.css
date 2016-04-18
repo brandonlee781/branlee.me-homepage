@@ -515,9 +515,9 @@ nav {
       flex-direction: column;
       height: 45em;
       padding-top: 4em;
-      background: url(../img/heroimage.jpg) #d9d9d9 fixed no-repeat;
+      background: url(../img/heroimage2.jpg) #111 fixed no-repeat;
       background-size: 2000px;
-      background-position: 50% 40%; }
+      background-position: 30% 150%; }
       .wrapper main .about h1, .wrapper main .about h2, .wrapper main .about p {
         color: #eee;
         margin: 0; }
@@ -548,6 +548,7 @@ nav {
       height: 40em;
       background-color: #424242; }
       .wrapper main .skills h2 {
+        width: 100%;
         font-size: 2em;
         color: #eee; }
       .wrapper main .skills img {
