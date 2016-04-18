@@ -451,14 +451,15 @@ th {
   padding: 0; }
 
 * {
-  font-family: "Roboto",sans-serif; }
+  font-family: "Roboto",sans-serif;
+  box-styling: border-box; }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh; }
 
-.nav-drawer {
+nav {
   display: flex;
   flex-flow: column nowrap;
   position: fixed;
@@ -467,40 +468,39 @@ body {
   right: 100%;
   width: 40%;
   height: 100%;
-  background-color: #363636;
+  background-color: #424242;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease; }
-  .nav-drawer h2 {
+  nav h2 {
     margin: 3px 5px 5px 10px;
     color: #eee; }
-  .nav-drawer button {
+  nav a button {
     display: flex;
     width: 100%;
     height: 60px !important;
-    text-decoration: none; }
-    .nav-drawer button a {
-      color: #eee;
-      text-decoration: none; }
-    .nav-drawer button i {
-      margin-right: 5px;
-      margin-bottom: 5px; }
-    .nav-drawer button img {
-      height: 20px;
-      width: 20px;
-      margin-right: 5px; }
+    text-decoration: none;
+    color: #eee !important; }
+  nav a i {
+    color: #eee;
+    margin-right: 5px;
+    margin-bottom: 5px; }
+  nav a img {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px; }
 
-body.show_sidebar .nav-drawer {
+body.show_sidebar nav {
   right: 60%; }
 
 body.show_sidebar .wrapper {
-  margin-left: 40%;
+  margin-left: 38.5%;
   width: 60%; }
 
 .wrapper {
-  overflow: hidden;
+  width: 100%;
   min-width: 100%;
   min-height: 100%;
   -webkit-transition: all .5s ease;
@@ -509,21 +509,84 @@ body.show_sidebar .wrapper {
   -o-transition: all .5s ease;
   transition: all .5s ease;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-  .wrapper .header {
+  .wrapper header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-item: center;
-    height: 3.5em;
-    background-color: #2196F3;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    .wrapper .header a {
+    height: 3.5em; }
+    .wrapper header i {
+      cursor: pointer;
       display: inline-block;
       width: 50px;
       color: #fff;
       margin-left: 16px; }
-  .wrapper .about {
-    margin: 0 16px; }
+  .wrapper main {
+    width: 90vw; }
+    .wrapper main .about {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30em;
+      padding: 7em 16px;
+      overflow-x: visible;
+      background: url(../img/heroimage.jpg) #d9d9d9 fixed no-repeat;
+      background-size: 2000px;
+      background-position: 50% 40%; }
+      .wrapper main .about h1, .wrapper main .about h2, .wrapper main .about p {
+        color: #eee;
+        margin: 0; }
+      .wrapper main .about h1 {
+        font-size: 4em;
+        font-weight: bold;
+        margin-top: 15px; }
+      .wrapper main .about h2 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: -15px; }
+      .wrapper main .about p {
+        font-size: 1.4em;
+        margin-bottom: 1.5em; }
+      .wrapper main .about i {
+        align-self: center;
+        font-size: 4em;
+        color: #eee; }
+    .wrapper main .blog {
+      width: 100%;
+      height: 14em;
+      padding: 3em 16px;
+      overflow-x: visible; }
+      .wrapper main .blog p {
+        font-size: 1.4em; }
+    .wrapper main .skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      height: 35em;
+      padding: 3em 16px;
+      background-color: #424242; }
+      .wrapper main .skills h2 {
+        font-size: 2em;
+        color: #eee; }
+      .wrapper main .skills img {
+        width: 20%;
+        height: 20vw;
+        padding: 1.5em; }
+        .wrapper main .skills img:hover {
+          width: 25%;
+          height: 25vw;
+          padding: 0.8em;
+          background-color: rgba(255, 255, 255, 0.6);
+          -webkit-transition: all .5s ease;
+          -moz-transition: all .5s ease;
+          -ms-transition: all .5s ease;
+          -o-transition: all .5s ease;
+          transition: all .5s ease; }
 
 /*# sourceMappingURL=style.css.map */

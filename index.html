@@ -14,37 +14,64 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-
 <body>
   <!-- Navigation & Header -->
-  <div class="nav-drawer">
+  <nav role="navigation">
     <h2>Brandon Lee</h2>
-    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-      <a href="#"><i class="material-icons">account_box</i> About</a>
-    </button>
-    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-      <a href="#"><i class="material-icons">create</i> Blog</a>
-    </button>
-    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-      <a href="#"><img src="img/wrench.svg"> Skills</a>
-    </button>
-    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-      <a href="#"><i class="material-icons">web</i> Project</a>
-    </button>
-    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-      <a href="#"><i class="material-icons">email</i> Contact</a>
-    </button>
-  </div>
+    <a href="#about"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">account_box</i> About
+    </button></a>
+    <a href="#"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">create</i> Blog
+    </button></a>
+    <a href="#skills"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+      <img src="img/wrench.svg"> Skills
+    </button></a>
+    <a href="#"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">web</i> Project
+    </button></a>
+    <a href="#"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">email</i> Contact
+    </button></a>
+  </nav>
   <div class="wrapper">
-    <div class="header">
-      <a class="menu-button" href="#"><i class="material-icons">menu</i></a>
-    </div>
-    <div class="about" id ="about">
-      <h1>Brandon Lee</h1>
-      <h2>Front-End Developer</h2>
-      <p>My name is Brandon. I make things on the internet.</p>
-      <p>I live in the Rockford, Illinois area and I'm currently learing Front-end Development throught <a href="http://www.freecodecamp.com">FreeCodeCamp</a></p>
-    </div>
+    <header>
+      <i class="material-icons menu-button">menu</i>
+    </header>
+    <main>
+      <div class="about">
+        <a name="about"></a>
+        <h1>Brandon Lee</h1>
+        <h2>Front-End Developer</h2>
+        <p>My name is Brandon. I make things on the internet. I live in the Rockford, Illinois area and I'm currently learning Front-end Development through <a href="http://www.freecodecamp.com">FreeCodeCamp</a>.</p>
+        <p>I want to make really cool things that people love to use. I want to make things that make people's live easier or more interesting. Most of all I want to make kick-ass tools that shouldn't work, but by some magic actually do.</p>
+        <i class="material-icons">keyboard_arrow_down</i>
+      </div><!--About div end -->
+      <div class="blog">
+        <p>My story of becoming a programmer, things I've learned along the way and my thoughts about it all.</p>
+        <a href="#"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Read my Blog</button></a>
+      </div><!-- Blog div end -->
+      <div class="skills" id="skills">
+        <a name="skills"></a>
+        <h2>I have extensive experience with the following:</h2>
+        <img src="img/skillslogo/html5.svg">
+        <img src="img/skillslogo/css3.svg">
+        <img src="img/skillslogo/javascript.svg">
+        <img src="img/skillslogo/jQuery.gif">
+        <img src="img/skillslogo/bootstrap.svg">
+        <img src="img/skillslogo/sass.svg">
+        <img src="img/skillslogo/git.svg">
+      </div>
+    </main>
+    <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">Created by Brandon Lee</div>
+        <ul class="mdl-mini-footer__link-list">
+          <li><a href="#">Download Resume</a></li>
+          <li><a href="https://github.com/brandonlee781/">Github page</a></li>
+        </ul>
+      </div>
+    </footer>
     
   </div>
   
