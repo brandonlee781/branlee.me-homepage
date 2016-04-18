@@ -1,6 +1,8 @@
 $(".menu-button").click(function(){
-  $("body").toggleClass("show_sidebar");
+  $("nav").toggleClass("open-drawer");
+  $(".wrapper").toggleClass("move-wrap");
 });
-$("nav button").click(function(){
-  $("body").toggleClass("show_sidebar");
+$("nav a").click(function(){
+  $("nav").toggleClass("open-drawer");
+  $(".wrapper").toggleClass("move-wrap");
 });
